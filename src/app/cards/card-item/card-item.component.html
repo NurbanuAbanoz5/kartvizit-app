@@ -1,0 +1,45 @@
+<mat-card class="example-card">
+
+    <mat-card-header class="mat-card-header"(click)="openUpdateModal(cardItem)">
+     
+      <mat-card-title >{{cardItem.name || '-'}}</mat-card-title>
+      <mat-card-subtitle>{{cardItem.title}}</mat-card-subtitle>
+    </mat-card-header>
+
+    <mat-card-content>
+      <ul class="list-group">
+        <li class="list-group-item">{{cardItem.phone}}</li>
+
+        <li class="list-group-item" >
+        <span *ngIf="cardItem.email">{{cardItem.email}}</span>
+        <small class="no-content  text-warning" *ngIf="!cardItem.email">E-posta adresi girilmemiştir. </small>
+        </li>
+
+        <li class="list-group-item" >
+          <span *ngIf="cardItem.adress ; else noAdress">{{cardItem.adress}}</span>
+          <ng-template #noAdress>
+         
+            <small class="text-warning  no-content" >Adres bilgileri girilmemiştir.</small> 
+            <!--burada text-danger dersem de kırmızı renkli uyarı verecektir 24.08.2023-->
+  
+  
+          </ng-template> 
+        </li> <!--buraya bak neden adresi almıyor-->
+
+
+      </ul>
+    </mat-card-content>
+  </mat-card>
+
+
+
+    <!-- <li class="list-group-item" *ngIf="cardItem.adress ; else noAdress">{{cardItem.adress}}</li>
+        <ng-template #noAdress>
+         
+          <small class="text-danger    no-content" >Adres bilgileri girilmemiştir.</small> 
+          burada text-warning dersem de sarı renkli uyarı verecektir 24.08.2023
+
+
+        </ng-template> 
+      -->
+       

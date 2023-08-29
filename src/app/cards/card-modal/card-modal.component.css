@@ -1,0 +1,27 @@
+.btn{
+     
+     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   
+}
+
+/*.mat-typography{
+    height: 100px;
+}*/
+
+
+.example-form {
+    min-width: 150px;
+    max-width: 500px;
+    width: 100%;
+  }
+  
+  .example-full-width {
+    width: 100%;
+  }
+  
+
+
+.example-full-width{
+
+  margin-top: 20px;  /* ben yaptım. 28.08.2023 progres bar yukarda olsun diye formun üstüne boşuk bıraktım */
+}

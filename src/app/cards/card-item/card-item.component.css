@@ -1,0 +1,24 @@
+.example-card {
+    margin-bottom: 30px;
+    border-width: 10px;
+    border-color: brown;
+}
+
+
+
+.mat-card-header {
+    cursor: pointer; /* kendim çözdüm class ekleyip. burada fare imleci el şeklinde oluyo. 25.08.2023 */
+
+
+}
+
+.list-group-item{
+
+    border-width: 1px;
+    border-color: black;
+}
+
+
+
+  
+  
